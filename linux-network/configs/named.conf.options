@@ -1,0 +1,19 @@
+options {
+    // Директория для кэша DNS
+    directory "/var/cache/bind";
+
+    // Пересылка запросов на публичные DNS
+    forwarders {
+        8.8.8.8;
+        8.8.4.4;
+    };
+
+    // Отключение проверки DNSSEC
+    dnssec-validation auto;
+
+    // Слушать на всех IPv4 адресах
+    listen-on-v6 { any; };
+    
+    // Разрешить запросы отовсюду в локальной сети
+    allow-query { any; };
+};
