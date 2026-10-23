@@ -40,7 +40,7 @@
 - `PermitRootLogin no` - запрет входа под root;
 - `PasswordAuthentication no` - запрет входа по паролю (только по ключу).
 
-Полный фрагмент добавленных строк находится в [configs/smb.conf](configs/smb.conf).
+Полный фрагмент измененных строк находится в [configs/sshd_config](configs/sshd_config).
 
 ## Стек
 
