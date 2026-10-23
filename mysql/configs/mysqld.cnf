@@ -1,1 +1,24 @@
+# Основные настройки MySQL Server
+[mysqld]
 
+# Пользователь, от имени которого работает сервер
+user            = mysql
+
+# Путь к PID-файлу и сокету
+pid-file        = /var/run/mysqld/mysqld.pid
+socket          = /var/run/mysqld/mysqld.sock
+
+# Порт, который слушает MySQL
+port            = 3306
+
+# Каталог с базами данных
+datadir         = /var/lib/mysql
+
+# Временный каталог
+tmpdir          = /tmp
+
+# Настройки сети для того, чтобы клиентская ВМ могла слушать все интерфейсы (по умолчанию MySQL слушает только localhost 127.0.0.1)
+bind-address            = 0.0.0.0
+
+# Разрешить только локальные подключения (по умолчанию)
+mysqlx-bind-address     = 127.0.0.1
