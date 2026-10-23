@@ -1,0 +1,15 @@
+;
+; BIND data file for example.org
+;
+$TTL    604800
+@       IN      SOA     ns01.example.org. ns02.example.org. (
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      ns01.example.org.
+ns01    IN      A       192.168.56.2
+share   IN      A       192.168.56.2
+lamp    IN      A       192.168.56.2
