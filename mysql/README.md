@@ -19,8 +19,8 @@
 3. Создание базы данных `sakharova` и таблиц `sharetable` и `privtable`.
 4. Создание пользователей `share_user` и `private_user` с паролями.
 5. Выдача прав:
-   - `share_user` — полный доступ к `sharetable`;
-   - `private_user` — только чтение `privtable`.
+   - `share_user` - полный доступ к `sharetable`;
+   - `private_user` - только чтение `privtable`.
 6. Открытие внешнего доступа в `/etc/mysql/mysql.conf.d/mysqld.cnf` (смена `bind-address` на `0.0.0.0`).
 7. Перезапуск MySQL: `sudo systemctl restart mysql`.
 8. Установка клиента на второй ВМ: `sudo apt install mysql-client`.
