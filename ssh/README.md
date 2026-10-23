@@ -40,6 +40,8 @@
 - `PermitRootLogin no` - запрет входа под root;
 - `PasswordAuthentication no` - запрет входа по паролю (только по ключу).
 
+Полный фрагмент добавленных строк находится в [configs/smb.conf](configs/smb.conf).
+
 ## Стек
 
 - **Ubuntu Server 25.04** (VirtualBox);
